@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+#text-header {
+    color: #023653;
+}
+
+.note-parent {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.note-child-1 {
+    color: #6495ED;
+    padding-right: 10px;
+}
+
+.note-parent span {
+    color: black;
+}
+
+.note-child-2 {
+    color: DimGray;
+    padding-right: 10px;
+}
+
+.note-child-3 {
+    color: #F2B113;
+}
+
+.screen {
+    display: flex;
+    justify-content: center;
+}
+
+.trapezoid {
+    border-top: 60px solid #DDDDDD;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    height: 0px;
+    width: 300px;
+    position: relative;
+}
+
+.screen p {
+    margin-top: 15px;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+}
+
+.ghe {
+    color: blue;
+}
+
+.bo {
+    width: 500px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.con {
+    display: flex;
+    justify-content: space-between;
+}
+
+.con .dau {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.con .giua {}
+
+.con .cuoi {
+    text-transform: uppercase;
+    font-weight: bold;
+}

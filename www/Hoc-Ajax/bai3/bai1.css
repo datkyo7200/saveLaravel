@@ -1,0 +1,44 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.row-collapse {
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #0099d7;
+    padding: 5px;
+}
+
+.row-full-width {
+    max-width: 100% !important;
+}
+
+.sanpham-cha {
+    height: 550px;
+    display: block;
+}
+
+.name-category {
+    height: 40px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #0099DA;
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+.sanpham-con1 {
+    height: 300px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.sanpham-con2 {
+    height: 180px;
+    display: flex;
+}

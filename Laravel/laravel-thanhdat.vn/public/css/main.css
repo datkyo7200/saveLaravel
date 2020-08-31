@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#wp-content {
+    min-height: 650px;
+}
+
+.price-box {
+    font-size: 15px;
+}
+
+.old-price {
+    text-decoration: line-through;
+}
+
+.product-item:hover {
+    border: 1px solid #bebebe!important;
+    transition: border 0.25s;
+}
+
+.table>tbody>tr>td {
+    vertical-align: middle;
+}

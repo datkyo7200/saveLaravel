@@ -1,0 +1,74 @@
+<?php
+
+use Illuminate\Support\Facades\Route;
+
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider within a group which
+| contains the "web" middleware group. Now create something great!
+|
+*/
+
+Route::get('/', function () {
+    return view('welcome');
+});
+
+// Định tuyến cơ bản
+Route::get('post',function(){
+    return "Đây là trang bài viểt";
+});
+
+Route::get('/admin/product',function(){
+    return "Đây là trang quản lý sản phảm";
+});
+
+Route::get('/admin/product/add',function(){
+    return "Đây là trang thêm sản phảm";
+});
+
+// Định tuyến có tham số
+Route::get('posts/{id}',function($id){
+    return $id;
+});
+Route::get('post/{cat_id}/page/{page}',function($cat_id,$page){
+    return $cat_id.'-'.$page;
+});
+
+// Đặt tên định tuyến
+Route::get('users/profile', function(){
+    return route('profile');
+})->name('profile');
+
+Route::get('/admin/product/add',function(){
+    return route('product.add');
+})->name('product.add');
+
+// Định tuyến tham số có tùy chọn
+Route::get('users/{id?}',function($id = 0){
+    return $id;
+});
+
+// Định tuyến tham số có ràng buộc biểu thức định quy
+
+// Route::get('products/{id}',function($id){
+//     return $id;
+// })->where('id','[0-9]+');
+
+Route::get('products/{slug}/{id}',function($slug,$id){
+    return "Slug là: ".$slug."</br>ID là: ".$id;
+});
+
+// Định tuyến qua một view
+Route::view('/welcome', 'welcome');
+Route::view('/post', 'post',['id'=>20]);
+Route::view('/addPost', 'addPost');
+// Định tuyến qua controller
+Route::get('/post/{id}','PostController@detail');
+
+Route::get('/post/add',function(){
+    return "Đây là trang thêm bài viết";
+});
